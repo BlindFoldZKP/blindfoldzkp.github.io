@@ -13,9 +13,20 @@ nav a:hover { text-decoration: underline; }
 @media (max-width: 800px) { .container img, .container iframe { max-width: 100%; } }
 
 </style>
+<script>
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+        window.location.href = 'slide11.html';
+    } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+        window.location.href = 'slide9.html';
+    } else if (event.key === 'Home') {
+        window.location.href = 'index.html';
+    }
+});
+</script>
 </head>
 <body>
-<div class="container"><iframe width="800" height="450" src="https://www.youtube.com/embed/fOGdb1CTu5c" title="Zero-Knowledge Proof Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="container"><iframe width="1200" height="675" src="https://www.youtube.com/embed/fOGdb1CTu5c" title="Zero-Knowledge Proof Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 <nav><a href="slide9.html">&laquo; Previous</a> | <a href="index.html">Cover</a> | <a href="slide11.html">Next &raquo;</a></nav>
 </body>
 </html>
